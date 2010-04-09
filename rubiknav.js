@@ -333,7 +333,7 @@ function rubiknav($) {
 		$(overlay).attr("_rn_href", href);
 		/* alert("href: " + href) */
 
-                $("body").trigger("rn_loading");
+		$("body").trigger("rn_loading");
 
 		if (method == 'ajax') {
 			var newcontent = $('<div></div>');
@@ -362,8 +362,8 @@ function rubiknav($) {
 						var t = $(overlay).find("h1").first().text();
 						update_browser( item_current, rn_settings.title_filter(t), true);
 
-                                                $("body").trigger("rn_loaded");
-                                                /* TRIGGER */
+						$("body").trigger("rn_loaded");
+						/* TRIGGER */
 					}, 500);	
 				}
 			} );
@@ -528,13 +528,13 @@ function rubiknav($) {
 				return on_menu_item_click(this);
 			} );
 			
-                        if (rn_settings.hover_enabled) {
-                            $(this).hover( function () {
-                                    on_menu_item_hover_over(this);
-                            }, function () {
-                                    on_menu_item_hover_out(this);
-                            } );
-                        }
+			if (rn_settings.hover_enabled) {
+			$(this).hover( function () {
+				on_menu_item_hover_over(this);
+				}, function () {
+				on_menu_item_hover_out(this);
+				} );
+			}
 		} );
 		$('.rubiknav-menu').hover ( function () {
 			on_menu_hover_over(this);
@@ -554,7 +554,7 @@ function rubiknav($) {
 	function init_menu () {
 		var idx = 0;
 	
-		$('.rubiknav-menu li *').hide();
+		/* $('.rubiknav-menu li *').hide(); */
 	
 		$('.rubiknav-menu').children().each( function () {
 			var r_href;

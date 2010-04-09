@@ -1,0 +1,162 @@
+/*
+ * rubiknav.css
+ */
+
+.rubiknav-menu {
+	display: block;
+	list-style: none;
+	
+	border:	none;
+	
+	padding: 0px;
+	margin:  0px;
+	
+	width:	218px;
+	height:	218px;
+	
+	z-index: 0 !important;
+}
+
+.rubiknav-menu li {
+	display: block;
+	width: 	 72px;
+	height:	 72px;
+	float:	left;
+	list-style: none;
+	list-style-position: inside;
+	marker-offset: 0px;
+	margin:	0px;
+	padding: 0px 0px 0px 0px;
+	text-align: center;
+	line-height: 76px;
+	cursor: default;
+	
+	position: relative;
+	
+	z-index: 10 !important;
+	
+}
+
+.rubiknav-menu li * {
+	cursor: default;
+	width: 72px;
+	height: 72px;
+	display: block;
+	font-weight: bold;
+	/* fontp-size: 0px; */ /* hide text */
+}
+
+
+
+.rubiknav-menu li.current {
+	background-color: #ffcc00;
+}
+
+.rubiknav-menu li:hover {
+	background-color: #ffcc00;
+}
+
+.rubiknav-hover {
+	width: 140px;
+	height: 71px;
+	background: #ababab;
+	position: fixed;
+	
+	top: 0;
+	left: 0;
+	
+	
+	border-right: 10px #ffffff solid;
+	
+	text-align: center;
+	display: block;
+	display: none;
+
+	line-height: 71px;
+	font-size: 40px;
+	font-weight: bold;
+	/* font-family: 'Arial Rounded MT Bold' ,'VAGRounded BT';
+	font-family: 'VAGRounded BT', 'Arial Rounded MT Bold'; */
+	
+	padding-left: 15px;
+	padding-right: 15px;
+	color: #ffffff;
+	
+	z-index: 1000;
+}
+
+.rubiknav-menu-pong {
+	display: block;
+	display: none;
+	position: relative;
+	
+	width:	72px;
+	height: 72px;
+	
+	background: #ffcc00;
+	
+	text-align: center;
+	line-height: 100px;
+	
+	z-index: -1 !important;
+}
+
+.rubiknav-content {
+	border:	none;
+	padding: 0px;
+	margin: 0px;
+	
+	width:	734px;
+	height:	734px;
+	
+	overflow: hidden;
+	
+	/*display: none;*/
+}
+
+.rubiknav-scrolly {
+	padding: 0px;
+	margin:  0px;
+	/*background: #ababab;*/
+	
+	width: 2202px;
+	/*height: 960px;*/
+}
+
+.rubiknav-scrolly-item {
+	width:	734px;
+	height:	734px;
+	float:  left;
+	
+	overflow: auto;
+}
+
+.rubiknav-scrolly-item-iframe {
+	width:	734px;
+	height: 734px;
+	border: 0px none;
+}
+
+.content {
+	/*display: none;*/
+	margin: 0px;
+	
+	padding: 10px;
+}
+
+#content {
+	/*display: none;*/
+}
+
+.rubiknav-overlay {
+	position: absolute;
+	background: #ffffff;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.rubiknav-overlay .content {
+	display: none;
+}

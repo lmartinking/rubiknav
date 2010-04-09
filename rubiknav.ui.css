@@ -1,0 +1,104 @@
+/*
+ * rubiknav.ui.css
+ */
+
+* {
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+}
+
+html {
+	overflow: hidden;
+	height: 100%;
+}
+
+body {
+	height: 100%;
+	
+	/* A piece of mystiscism */
+	-webkit-text-stroke:1px transparent;
+}
+
+/* layout hacks */
+body {	
+
+}
+
+.layout {
+	height: 100%;
+	width: 100%;
+	
+	overflow: hidden;
+}
+
+.inner {
+	height:		800px;	
+	width:		1052px;	
+	max-width:	1052px;
+	
+	margin:		0 auto;
+	
+	display:	block;
+	position:	static;
+
+	text-align:	left;
+	
+	overflow:	hidden;
+	
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	margin-top: -397px;
+	margin-left: -525px;
+	  
+	z-index: 0;
+}
+/* end layout hacks */
+
+#left_box_1 h1 { display: none; }
+#left_box_2 { background: #ffffff; }
+#left_box_3 { background: #ffffff; }
+
+.container {
+	border: 10px solid #000000;
+	margin: 20px;
+	
+	overflow: hidden;
+}
+
+.container_normal {
+	width: 218px;
+	height: 218px;
+	
+	font-family: sans-serif;
+}
+
+.container_large {
+	width:  734px;
+	height: 734px;
+	background: #ffffff;
+}
+
+
+#centre_box {	float: right; }
+
+/* Icons for the menu */
+.ico_about {	background: url("../menu/ico_about.png") 50% 50%;	}
+.ico_code {	background: url("../menu/ico_code.png") 50% 50%;	}
+.ico_folio {	background: url("../menu/ico_folio.png") 50% 50%;	}
+.ico_photo {	background: url("../menu/ico_photo.png") 50% 50%;	}
+.ico_search {	background: url("../menu/ico_search.png") 50% 50%;	}
+.ico_shop {	background: url("../menu/ico_shop.png") 50% 50%;	}
+.ico_talk {	background: url("../menu/ico_talk.png") 50% 50%;	}
+.ico_words {	background: url("../menu/ico_words.png") 50% 50%;	}
+.ico_home {	background: url("../menu/ico_home.png") 50% 50%;	}
+
+.current {
+	position: relative;
+}
+
+.rubiknav-menu {
+	background: url('../menu/nav_bg.png') 0 0;
+}
+
+/* vim: filetype=css */

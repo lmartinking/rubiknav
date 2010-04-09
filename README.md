@@ -11,7 +11,11 @@ Rubiknav is licenced under the GPLv2.
 
 ## Events
 
+
 ### Event names
+
+Below is a list of events triggered by rubiknav.
+
 
 #### rn_init
 
@@ -41,6 +45,12 @@ The document body receieves this event when a subpage has finished loading.
 
 
 ### Event Example
+
+Normally we use `jQuery.live()` to hook into events as it is persistant, irregardless
+of whether the element exists yet. This is because subpages in the overlay are not part
+of the DOM until they are loaded by Rubiknav, and then they are destroyed when the overlay
+loads new subpage content.
+
 
 	jQuery("body").live("rn_init", function () {
 		/* Some stuff here when rubiknav loads */
